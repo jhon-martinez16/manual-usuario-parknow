@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual de Usuario - ParkNow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+<!-- SIDEBAR -->
+<nav class="sidebar">
+  <div class="sidebar-header">
+    <div class="brand">
+      <div class="brand-icon">P</div>
+      <div class="brand-text">
+        <div class="brand-name">ParkNow</div>
+        <div class="brand-sub">Manual de Usuario</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-menu">
+    <div class="menu-section-label">Contenido</div>
+    <a class="nav-item active" onclick="show('s1',this)">
+      <span class="nav-icon">01</span>
+      <span>Introducción</span>
+    </a>
+    <a class="nav-item" onclick="show('s2',this)">
+      <span class="nav-icon">02</span>
+      <span>Requisitos del Sistema</span>
+    </a>
+    <a class="nav-item" onclick="show('s3',this)">
+      <span class="nav-icon">03</span>
+      <span>Instalación</span>
+    </a>
+    <a class="nav-item" onclick="show('s4',this)">
+      <span class="nav-icon">04</span>
+      <span>Funcionalidades</span>
+    </a>
+    <a class="nav-item" onclick="show('s5',this)">
+      <span class="nav-icon">05</span>
+      <span>Resolución de Problemas</span>
+    </a>
+    <a class="nav-item" onclick="show('s6',this)">
+      <span class="nav-icon">06</span>
+      <span>Consejos de Seguridad</span>
+    </a>
+    <a class="nav-item" onclick="show('s7',this)">
+      <span class="nav-icon">07</span>
+      <span>Términos y Condiciones</span>
+    </a>
+    <a class="nav-item" onclick="show('s8',this)">
+      <span class="nav-icon">08</span>
+      <span>Soporte Técnico</span>
+    </a>
+  </div>
+
+  <div class="sidebar-footer">
+    <div class="version-badge">v1.0 · 2025</div>
+  </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main class="main">
+
+<!-- =========================================================
+     S1: INTRODUCCIÓN
+     ========================================================= -->
+<div id="s1" class="section active">
+  <div class="section-hero">
+    <div class="section-tag">Sección 01</div>
+    <h1>Manual de Usuario<br><span class="accent">ParkNow</span></h1>
+    <p class="lead">Guía completa para encontrar, reservar y gestionar espacios de parqueadero de forma rápida, segura y sin complicaciones desde tu dispositivo móvil.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <h2>¿Qué es ParkNow?</h2>
+  <p>ParkNow es una aplicación móvil diseñada para facilitar la búsqueda, reserva y pago de espacios de parqueadero en tiempo real. Mediante un mapa interactivo y un sistema intuitivo de reservas, los usuarios pueden localizar parqueaderos cercanos, verificar disponibilidad, realizar pagos seguros y gestionar sus reservas activas desde un solo lugar.</p>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-icon">🗺️</div>
+      <div class="card-title">Encontrar</div>
+      <p>Localiza parqueaderos disponibles en tiempo real usando el mapa interactivo.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📅</div>
+      <div class="card-title">Reservar</div>
+      <p>Reserva tu espacio con anticipación y garantiza tu lugar antes de llegar.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">💳</div>
+      <div class="card-title">Pagar</div>
+      <p>Realiza pagos seguros desde la app sin filas ni efectivo.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📋</div>
+      <div class="card-title">Gestionar</div>
+      <p>Consulta el historial de reservas, estado activo y pagos realizados.</p>
+    </div>
+  </div>
+
+  <h2>Propósito del Manual</h2>
+  <p>Este manual tiene como objetivo guiar al usuario en el uso completo de la aplicación ParkNow, desde su instalación hasta la gestión avanzada de reservas. Está diseñado para que cualquier persona, independientemente de su nivel de experiencia tecnológica, pueda aprovechar al máximo todas las funcionalidades disponibles.</p>
+
+  <h2>Audiencia Objetivo</h2>
+  <div class="info-list">
+    <div class="info-item">
+      <div class="info-dot blue"></div>
+      <div>
+        <strong>Usuarios Generales:</strong> Conductores que desean encontrar y reservar parqueaderos de forma rápida y segura.
+      </div>
+    </div>
+    <div class="info-item">
+      <div class="info-dot green"></div>
+      <div>
+        <strong>Usuarios Frecuentes:</strong> Personas que utilizan parqueaderos a diario y desean optimizar su tiempo y gestión de pagos.
+      </div>
+    </div>
+    <div class="info-item">
+      <div class="info-dot orange"></div>
+      <div>
+        <strong>Nuevos Usuarios:</strong> Personas que se registran por primera vez y necesitan orientación paso a paso.
+      </div>
+    </div>
+  </div>
+
+  <h2>Beneficios del Sistema</h2>
+  <div class="benefits-grid">
+    <div class="benefit-item">
+      <span class="benefit-icon">⚡</span>
+      <div>
+        <strong>Ahorro de tiempo</strong>
+        <p>Encuentra y reserva en segundos sin dar vueltas buscando espacio.</p>
+      </div>
+    </div>
+    <div class="benefit-item">
+      <span class="benefit-icon">🔒</span>
+      <div>
+        <strong>Pagos seguros</strong>
+        <p>Transacciones cifradas con múltiples métodos de pago disponibles.</p>
+      </div>
+    </div>
+    <div class="benefit-item">
+      <span class="benefit-icon">📍</span>
+      <div>
+        <strong>Geolocalización precisa</strong>
+        <p>Información exacta de parqueaderos cercanos a tu ubicación actual.</p>
+      </div>
+    </div>
+    <div class="benefit-item">
+      <span class="benefit-icon">📊</span>
+      <div>
+        <strong>Historial completo</strong>
+        <p>Accede a todas tus reservas y pagos en cualquier momento.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Estructura del Manual</h2>
+  <p>Este documento está organizado en las siguientes secciones:</p>
+  <div class="toc-list">
+    <div class="toc-item"><span class="toc-num">01</span><span>Introducción - Visión general del sistema y sus beneficios</span></div>
+    <div class="toc-item"><span class="toc-num">02</span><span>Requisitos del Sistema - Dispositivos y conexión recomendada</span></div>
+    <div class="toc-item"><span class="toc-num">03</span><span>Instalación - Cómo descargar e instalar la aplicación</span></div>
+    <div class="toc-item"><span class="toc-num">04</span><span>Funcionalidades - Guía detallada de cada pantalla y función</span></div>
+    <div class="toc-item"><span class="toc-num">05</span><span>Resolución de Problemas - Errores frecuentes y soluciones</span></div>
+    <div class="toc-item"><span class="toc-num">06</span><span>Consejos de Seguridad - Protección de cuenta y datos</span></div>
+    <div class="toc-item"><span class="toc-num">07</span><span>Términos y Condiciones - Condiciones de uso del servicio</span></div>
+    <div class="toc-item"><span class="toc-num">08</span><span>Soporte Técnico - Canales de contacto y ayuda</span></div>
+  </div>
+
+  <div class="alert alert-info">
+    <strong>Compromiso del Usuario:</strong> Al utilizar ParkNow, el usuario se compromete a proporcionar información verídica, mantener la confidencialidad de sus credenciales y hacer uso responsable del sistema de reservas. El incumplimiento de estas condiciones puede resultar en la suspensión de la cuenta.
+  </div>
+
+  <div class="doc-footer">
+    <span>ParkNow · Manual de Usuario v1.0</span>
+    <span>Sección 01 / 08</span>
+  </div>
+</div>
+
+
+<!-- =========================================================
+     S2: REQUISITOS
+     ========================================================= -->
+<div id="s2" class="section">
+  <div class="section-hero">
+    <div class="section-tag">Sección 02</div>
+    <h1>Requisitos del <span class="accent">Sistema</span></h1>
+    <p class="lead">Verifica que tu dispositivo cumpla con los requisitos mínimos para garantizar una experiencia óptima con ParkNow.</p>
+  </div>
+  <div class="divider"></div>
+
+  <h2>Dispositivos Compatibles</h2>
+
+  <div class="req-grid">
+    <div class="req-card android">
+      <div class="req-header">
+        <span class="req-os-icon">🤖</span>
+        <h3>Android</h3>
+      </div>
+      <table>
+        <tbody>
+          <tr><td><strong>Versión mínima</strong></td><td>Android 8.0 (Oreo) o superior</td></tr>
+          <tr><td><strong>RAM</strong></td><td>Mínimo 2 GB</td></tr>
+          <tr><td><strong>Almacenamiento</strong></td><td>100 MB libres</td></tr>
+          <tr><td><strong>Procesador</strong></td><td>ARM64 / ARMv7</td></tr>
+          <tr><td><strong>Resolución</strong></td><td>Mínimo 1280 × 720 px</td></tr>
+          <tr><td><strong>GPS</strong></td><td>Requerido</td></tr>
+          <tr><td><strong>Cámara</strong></td><td>Opcional (para perfil)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  
+  </div>
+
+  <h2>Conectividad</h2>
+  <div class="conn-list">
+    <div class="conn-item">
+      <div class="conn-icon">📶</div>
+      <div>
+        <strong>Conexión mínima recomendada</strong>
+        <p>Se requiere acceso a Internet con un ancho de banda mínimo de <strong>2 Mbps</strong> para actualizar el mapa, cargar disponibilidad en tiempo real y procesar pagos.</p>
+      </div>
+    </div>
+    <div class="conn-item">
+      <div class="conn-icon">📡</div>
+      <div>
+        <strong>Redes compatibles</strong>
+        <p>La aplicación funciona sobre redes <strong>4G, 5G y Wi-Fi</strong>. Se recomienda Wi-Fi para operaciones de pago y carga inicial del mapa.</p>
+      </div>
+    </div>
+    <div class="conn-item">
+      <div class="conn-icon">📴</div>
+      <div>
+        <strong>Modo sin conexión</strong>
+        <p>Con conexión limitada, la app puede mostrar el historial de reservas guardadas en caché, pero <strong>no permite nuevas reservas ni pagos</strong> sin Internet activo.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Recomendaciones Adicionales</h2>
+  <div class="alert alert-tip">
+    <ul style="margin:0;padding-left:1.2rem;line-height:2">
+      <li>Mantén el sistema operativo de tu dispositivo <strong>actualizado</strong> a la última versión disponible.</li>
+      <li>Activa los <strong>permisos de ubicación</strong> (GPS) antes de abrir la aplicación para una experiencia fluida.</li>
+      <li>Asegúrate de tener al menos <strong>200 MB de espacio libre</strong> para el almacenamiento temporal de datos.</li>
+      <li>Habilita las <strong>notificaciones push</strong> para recibir alertas de confirmación de reserva y vencimiento.</li>
+      <li>Usa <strong>Wi-Fi estable</strong> al registrarte por primera vez y durante pagos importantes.</li>
+    </ul>
+  </div>
+
+  <div class="doc-footer">
+    <span>ParkNow · Manual de Usuario v1.0</span>
+    <span>Sección 02 / 08</span>
+  </div>
+</div>
+
+
+<!-- =========================================================
+     S3: INSTALACIÓN
+     ========================================================= -->
+<div id="s3" class="section">
+  <div class="section-hero">
+    <div class="section-tag">Sección 03</div>
+    <h1>Instalación y <span class="accent">Configuración</span></h1>
+    <p class="lead">Descarga, instala y configura ParkNow en pocos minutos siguiendo esta guía paso a paso.</p>
+  </div>
+  <div class="divider"></div>
+
+  <h2>Descarga desde Tiendas Oficiales</h2>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <strong>Android - Google Play Store</strong>
+        <p>Abre <strong>Google Play Store</strong> en tu dispositivo. Busca <em>"ParkNow"</em> en la barra de búsqueda, selecciona la aplicación y presiona <strong>Instalar</strong> La descarga tomará menos de un minuto.</p>
+      </div>
+    </div>
+
+    
+
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <strong>Primera apertura</strong>
+        <p>Una vez instalada, abre la app desde tu pantalla de inicio. Verás la pantalla de bienvenida de ParkNow con las opciones <strong>Iniciar Sesión</strong> y <strong>Registrarse</strong></p>
+        <div class="screen-preview">
+          <img src="img/parnow.png" alt="Pantalla de inicio ParkNow" class="screen-img" />
+          <p class="screen-caption">Pantalla de inicio - ParkNow</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Registro de Cuenta Nueva</h2>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <strong>Acceder al formulario de registro</strong>
+        <p>En la pantalla de inicio, toca el botón <strong>"Registrarse"</strong> Se abrirá el formulario de creación de cuenta.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <strong>Completar los datos personales</strong>
+        <p>Ingresa tu Nombre, Apellido, Correo electrónico, País, Contraseña y Confirmar contraseña. Acepta los Términos y Condiciones y presiona <strong>Registrarse</strong></p>
+        <div class="screen-preview">
+          <img src="img/registro.png" alt="Pantalla de Registro" class="screen-img" />
+          <p class="screen-caption">Pantalla de Registro</p>
+        </div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <strong>Iniciar sesión</strong>
+        <p>Si ya tienes cuenta, toca <strong>"Iniciar Sesión"</strong> en la pantalla principal. Ingresa tu correo electrónico y contraseña. También puedes usar la opción de <strong>inicio rápido con Google</strong></p>
+        <div class="screen-preview">
+          <img src="img/login.png" alt="Pantalla de Login" class="screen-img" />
+          <p class="screen-caption">Pantalla de Inicio de Sesión</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Permisos Necesarios</h2>
+  <div class="permissions-grid">
+    <div class="perm-item">
+      <span class="perm-icon">📍</span>
+      <div>
+        <strong>Ubicación (GPS)</strong>
+        <p>Indispensable para mostrar parqueaderos cercanos y calcular rutas. Selecciona <em>"Permitir mientras uso la app"</em>.</p>
+      </div>
+    </div>
+    <div class="perm-item">
+      <span class="perm-icon">🔔</span>
+      <div>
+        <strong>Notificaciones</strong>
+        <p>Permita notificaciones para recibir confirmaciones de reserva y alertas de tiempo.</p>
+      </div>
+    </div>
+    <div class="perm-item">
+      <span class="perm-icon">📷</span>
+      <div>
+        <strong>Cámara / Galería</strong>
+        <p>Opcional. Se utiliza para personalizar la foto de perfil del usuario.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="alert alert-warning">
+    <strong>⚠ Importante:</strong> Sin el permiso de ubicación activo, la aplicación no podrá mostrar el mapa de parqueaderos ni calcular rutas. Asegúrate de habilitarlo desde la configuración de tu dispositivo si lo rechazaste durante la instalación.
+  </div>
+
+  <div class="doc-footer">
+    <span>ParkNow · Manual de Usuario v1.0</span>
+    <span>Sección 03 / 08</span>
+  </div>
+</div>
+
+
+<!-- =========================================================
+     S4: FUNCIONALIDADES
+     ========================================================= -->
+<div id="s4" class="section">
+  <div class="section-hero">
+    <div class="section-tag">Sección 04</div>
+    <h1>Funcionalidades <span class="accent">Principales</span></h1>
+    <p class="lead">Conoce todas las pantallas y características disponibles en ParkNow para sacarle el máximo provecho a la aplicación.</p>
+  </div>
+  <div class="divider"></div>
+
+  <!-- TABS -->
+  <div class="sheet-tabs">
+    <div class="sheet-tab active" onclick="showSheet('fn1',this)">Bienvenida</div>
+    <div class="sheet-tab" onclick="showSheet('fn2',this)">Mapa</div>
+    <div class="sheet-tab" onclick="showSheet('fn3',this)">Reservar</div>
+    <div class="sheet-tab" onclick="showSheet('fn4',this)">Mis Reservas</div>
+    <div class="sheet-tab" onclick="showSheet('fn5',this)">Pagos</div>
+    <div class="sheet-tab" onclick="showSheet('fn6',this)">Perfil</div>
+    <div class="sheet-tab" onclick="showSheet('fn7',this)">Navegación</div>
+  </div>
+
+  <div class="sheet-content">
+
+    <!-- BIENVENIDA -->
+    <div id="fn1" class="sheet-panel active">
+      <h3>Pantalla de Bienvenida</h3>
+      <p>Al abrir ParkNow por primera vez, el usuario es recibido con una pantalla de bienvenida que explica brevemente el propósito de la aplicación y ofrece dos acciones principales:</p>
+      <div class="feature-layout">
+        <div class="feature-text">
+          <div class="feature-list">
+            <div class="feature-item">
+              <span class="fi-icon">🚗</span>
+              <div>
+                <strong>Reporta un parqueadero</strong>
+                <p>Inicia el proceso de búsqueda y reserva de un espacio de parqueadero disponible en el mapa.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="fi-icon">📋</span>
+              <div>
+                <strong>Parqueaderos reportados</strong>
+                <p>Accede al historial de parqueaderos visitados o a la lista de los más cercanos a tu ubicación.</p>
+              </div>
+            </div>
+          </div>
+          <div class="alert alert-tip" style="margin-top:1rem">
+            La pantalla de bienvenida aparece solo en el <strong>primer inicio de sesión</strong>. En accesos posteriores, la app abre directamente el mapa principal.
+          </div>
+        </div>
+        <div class="feature-screens">
+          <div class="screen-preview">
+            <img src="img/bienvenido.png" alt="Pantalla de Bienvenida" class="screen-img" />
+            <p class="screen-caption">Pantalla de bienvenida</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAPA -->
+    <div id="fn2" class="sheet-panel">
+      <h3>Mapa de Parqueaderos</h3>
+      <p>El mapa es la pantalla principal de la aplicación. Desde aquí el usuario puede visualizar en tiempo real todos los parqueaderos disponibles en su área.</p>
+      <div class="feature-layout">
+        <div class="feature-text">
+          <div class="feature-list">
+            <div class="feature-item">
+              <span class="fi-icon">🔍</span>
+              <div>
+                <strong>Buscar dirección</strong>
+                <p>Usa la barra de búsqueda en la parte superior para buscar una dirección o zona específica.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="fi-icon">📌</span>
+              <div>
+                <strong>Mapa interactivo</strong>
+                <p>Los parqueaderos se muestran como marcadores sobre el mapa. Toca cualquiera para ver su información detallada.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="fi-icon">🅿️</span>
+              <div>
+                <strong>Parqueaderos cercanos</strong>
+                <p>En la parte inferior aparece una lista de los parqueaderos más próximos con su nombre, dirección y disponibilidad.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-screens">
+          <div class="screen-preview">
+            <img src="img/mapa parqueaderos.png" alt="Mapa de Parqueaderos" class="screen-img" />
+            <p class="screen-caption">Mapa de Parqueaderos</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="margin-top:2rem">Detalle del Parqueadero</h3>
+      <p>Al seleccionar un parqueadero en el mapa, se despliega una tarjeta con la información completa del lugar.</p>
+      <div class="feature-layout">
+        <div class="feature-text">
+          <table>
+            <thead><tr><th>Campo</th><th>Descripción</th></tr></thead>
+            <tbody>
+              <tr><td>Nombre</td><td>Nombre comercial del parqueadero</td></tr>
+              <tr><td>Disponibilidad</td><td>Número de espacios libres en tiempo real</td></tr>
+              <tr><td>Tarifa</td><td>Precio por hora</td></tr>
+              <tr><td>Comodidades</td><td>Servicios disponibles (vigilancia, cubierto, etc.)</td></tr>
+              <tr><td>Calificación</td><td>Puntaje de usuarios previos</td></tr>
+            </tbody>
+          </table>
+          <div class="steps" style="margin-top:1rem">
+            <div class="step">
+              <div class="step-num sm">1</div>
+              <div class="step-body"><p>Toca el marcador del parqueadero en el mapa.</p></div>
+            </div>
+            <div class="step">
+              <div class="step-num sm">2</div>
+              <div class="step-body"><p>Revisa la disponibilidad y la tarifa por hora.</p></div>
+            </div>
+            <div class="step">
+              <div class="step-num sm">3</div>
+              <div class="step-body"><p>Presiona <strong>"Reservar Ahora"</strong> para continuar.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-screens">
+          <div class="screen-preview">
+            <img src="img/detalles_parqueadero.png" alt="Detalle del Parqueadero" class="screen-img" />
+            <p class="screen-caption">Detalle del Parqueadero</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESERVAR -->
+    <div id="fn3" class="sheet-panel">
+      <h3>Proceso de Reserva</h3>
+      <p>Una vez seleccionado el parqueadero, el usuario puede crear una nueva reserva definiendo los parámetros de su estadía.</p>
+      <div class="feature-layout">
+        <div class="feature-text">
+          <div class="feature-list">
+            <div class="feature-item">
+              <span class="fi-icon">📅</span>
+              <div>
+                <strong>Seleccionar fecha y hora de entrada</strong>
+                <p>Elige el día y la hora exacta en que planeas llegar al parqueadero.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="fi-icon">⏱️</span>
+              <div>
+                <strong>Duración estimada</strong>
+                <p>Indica cuánto tiempo necesitas el espacio. El sistema calcula automáticamente el costo total.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="fi-icon">💰</span>
+              <div>
+                <strong>Subtotal</strong>
+                <p>Visualiza el costo antes de confirmar. La tarifa se muestra en tiempo real según la duración seleccionada.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="fi-icon"></span>
+              <div>
+                <strong>Confirmar reserva</strong>
+                <p>Presiona <strong>"Continuar"</strong> para proceder al paso de pago y completar la reserva.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-screens">
+          <div class="screen-preview">
+            <img src="img/reservacion.png" alt="Nueva Reserva" class="screen-img" />
+            <p class="screen-caption">Pantalla de Nueva Reserva</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="margin-top:2rem">Reserva Activa</h3>
+      <p>Una vez confirmada la reserva, la pantalla de <strong>Reserva Activa</strong> muestra el estado en tiempo real de tu estadía.</p>
+      <div class="feature-layout">
+        <div class="feature-text">
+          <div class="feature-list">
+            <div class="feature-item">
+              <span class="fi-icon">🎫</span>
+              <div>
+                <strong>Código de reserva</strong>
+                <p>Cada reserva genera un código único (ej. <code>PKN-8542</code>) para identificar tu espacio.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="fi-icon">⏳</span>
+              <div>
+                <strong>Tiempo transcurrido</strong>
+                <p>Contador en tiempo real del tiempo que llevas en el parqueadero.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="fi-icon">🅿️</span>
+              <div>
+                <strong>Detalles del espacio</strong>
+                <p>Nombre del parqueadero, nivel, puesto asignado y hora de entrada.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-screens">
+          <div class="screen-preview">
+            <img src="img/reserva_activa.png" alt="Reserva Activa" class="screen-img" />
+            <p class="screen-caption">Reserva Activa</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MIS RESERVAS -->
+    <div id="fn4" class="sheet-panel">
+      <h3>Historial de Reservas</h3>
+      <p>En la sección <strong>Mis Reservas</strong> el usuario puede consultar todas sus reservas pasadas y activas, con el detalle de cada una.</p>
+      <div class="feature-layout">
+        <div class="feature-text">
+          <div class="feature-list">
+            <div class="feature-item">
+              <span class="fi-icon">📋</span>
+              <div>
+                <strong>Lista de reservas</strong>
+                <p>Cada tarjeta muestra el código de reserva, nombre del parqueadero, fecha y hora de la reserva, y su estado (Activa / Completada).</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="fi-icon">🔎</span>
+              <div>
+                <strong>Ver detalle</strong>
+                <p>Toca cualquier reserva para ver su información completa, incluyendo duración, costo y datos del parqueadero.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="fi-icon">🏷️</span>
+              <div>
+                <strong>Estado de la reserva</strong>
+                <p>Las reservas se marcan como <span style="color:#27a96c;font-weight:700">Activa</span> (en curso) o completadas (históricas).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-screens">
+          <div class="screen-preview">
+            <img src="img/mis_reservas.png" alt="Mis Reservas" class="screen-img" />
+            <p class="screen-caption">Historial de Reservas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGOS -->
+    <div id="fn5" class="sheet-panel">
+      <h3>Gestión de Pagos</h3>
+      <p>ParkNow integra un sistema de pagos seguro que permite al usuario realizar y gestionar todos sus pagos desde la aplicación.</p>
+      <div class="feature-layout">
+        <div class="feature-text">
+          <div class="feature-list">
+            <div class="feature-item">
+              <span class="fi-icon">💳</span>
+              <div>
+                <strong>Confirmar Pago</strong>
+                <p>Antes de pagar, el sistema muestra un resumen con el parqueadero, duración, tarifa y total a cobrar. Selecciona tu método de pago y presiona <strong>"Pagar"</strong>.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="fi-icon">🏦</span>
+              <div>
+                <strong>Métodos aceptados</strong>
+                <p>Tarjetas débito y crédito, PSE u otros métodos disponibles según tu región.</p>
+              </div>
+            </div>
+          </div>
+          <table style="margin-top:1rem">
+            <thead><tr><th>Campo</th><th>Descripción</th></tr></thead>
+            <tbody>
+              <tr><td>Parqueadero</td><td>Nombre del lugar reservado</td></tr>
+              <tr><td>Duración</td><td>Tiempo total de la reserva</td></tr>
+              <tr><td>Tarifa</td><td>Precio por hora</td></tr>
+              <tr><td>Total</td><td>Monto total a pagar</td></tr>
+              <tr><td>Método de Pago</td><td>Tarjeta u otro medio seleccionado</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="feature-screens">
+          <div class="screen-preview">
+            <img src="img/pagos.png" alt="Pantalla de Pagos" class="screen-img" />
+            <p class="screen-caption">Confirmación de Pago</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="margin-top:2rem">Pago Exitoso</h3>
+      <p>Tras completar el pago, la aplicación confirma la transacción con un mensaje de éxito y muestra el código de reserva generado.</p>
+      <div class="feature-layout">
+        <div class="feature-text">
+          <div class="alert alert-success">
+            <strong>✓ ¡Pago Exitoso!</strong><br>
+            Tu reserva ha sido confirmada. Recibirás una notificación con el código de acceso al parqueadero. Puedes consultar tu reserva en cualquier momento desde <strong>Mis Reservas</strong>.
+          </div>
+          <div class="steps" style="margin-top:1rem">
+            <div class="step"><div class="step-num sm">1</div><div class="step-body"><p>Verifica que el código de reserva sea correcto.</p></div></div>
+            <div class="step"><div class="step-num sm">2</div><div class="step-body"><p>Presiona <strong>"Ver Mi Reserva"</strong> para ver el estado activo.</p></div></div>
+            <div class="step"><div class="step-num sm">3</div><div class="step-body"><p>Dirígete al parqueadero con tu código listo.</p></div></div>
+          </div>
+        </div>
+        <div class="feature-screens">
+          <div class="screen-preview">
+            <img src="img/pago_exitoso.png" alt="Pago Exitoso" class="screen-img" />
+            <p class="screen-caption">Confirmación de Pago Exitoso</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PERFIL -->
+    <div id="fn6" class="sheet-panel">
+      <h3>Perfil de Usuario</h3>
+      <p>La sección de perfil permite al usuario visualizar y actualizar su información personal, y acceder a las opciones principales de la app.</p>
+      <div class="feature-layout">
+        <div class="feature-text">
+          <div class="feature-list">
+            <div class="feature-item">
+              <span class="fi-icon">👤</span>
+              <div>
+                <strong>Datos personales</strong>
+                <p>Visualiza tu nombre, correo electrónico y foto de perfil registrados.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="fi-icon">✏️</span>
+              <div>
+                <strong>Editar Perfil</strong>
+                <p>Accede al botón <strong>"Editar Mi Perfil"</strong> para modificar tus datos personales.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="fi-icon">📊</span>
+              <div>
+                <strong>Accesos rápidos</strong>
+                <p>Desde el perfil puedes ir directamente a: Mis Reservas, Métodos de Pago, Historial de Pagos y Configuración.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-screens">
+          <div class="screen-preview">
+            <img src="img/perfil.png" alt="Perfil de Usuario" class="screen-img" />
+            <p class="screen-caption">Perfil de Usuario</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="margin-top:2rem">Editar Perfil</h3>
+      <p>Desde la pantalla de edición, el usuario puede actualizar sus datos personales y guardar los cambios.</p>
+      <div class="feature-layout">
+        <div class="feature-text">
+          <table>
+            <thead><tr><th>Campo</th><th>Descripción</th></tr></thead>
+            <tbody>
+              <tr><td>Nombre</td><td>Nombre completo del usuario</td></tr>
+              <tr><td>Apellido</td><td>Apellido del usuario</td></tr>
+              <tr><td>Correo</td><td>Dirección de correo electrónico</td></tr>
+              <tr><td>Teléfono</td><td>Número de contacto</td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top:.75rem">Una vez completados los cambios, presiona <strong>"Guardar Cambios"</strong> para actualizar la información.</p>
+        </div>
+        <div class="feature-screens">
+          <div class="screen-preview">
+            <img src="img/editar perfil.png" alt="Editar Perfil" class="screen-img" />
+            <p class="screen-caption">Editar Perfil</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVEGACIÓN LATERAL -->
+    <div id="fn7" class="sheet-panel">
+      <h3>Menú de Navegación</h3>
+      <p>ParkNow incluye un menú lateral deslizante que permite acceder a todas las secciones de la aplicación desde cualquier pantalla.</p>
+      <div class="feature-layout">
+        <div class="feature-text">
+          <table>
+            <thead><tr><th>Opción</th><th>Función</th></tr></thead>
+            <tbody>
+              <tr><td>🙍 <strong>Perfil</strong></td><td>Ver y editar información personal</td></tr>
+              <tr><td>📋 <strong>Mis Reservas</strong></td><td>Historial y reservas activas</td></tr>
+              <tr><td>💳 <strong>Métodos de Pago</strong></td><td>Gestionar tarjetas y formas de pago</td></tr>
+              <tr><td>📊 <strong>Historial de Pagos</strong></td><td>Ver todos los pagos realizados</td></tr>
+              <tr><td>⚙️ <strong>Configuración</strong></td><td>Preferencias de la aplicación</td></tr>
+              <tr><td>🚪 <strong>Cerrar Sesión</strong></td><td>Salir de la cuenta actual</td></tr>
+            </tbody>
+          </table>
+          <div class="alert alert-tip" style="margin-top:1rem">
+            Para abrir el menú lateral, desliza desde el borde izquierdo de la pantalla hacia la derecha, o toca el ícono de menú (☰) en la esquina superior izquierda.
+          </div>
+        </div>
+        <div class="feature-screens">
+          <div class="screen-preview">
+            <img src="img/navegacion_lateral.png" alt="Menú de Navegación" class="screen-img" />
+            <p class="screen-caption">Menú de Navegación Lateral</p>
+          </div>
+          <div class="screen-preview" style="margin-top:.75rem">
+            <img src="img/inicio.png" alt="Pantalla de Inicio" class="screen-img" />
+            <p class="screen-caption">Pantalla Principal</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end sheet-content -->
+
+  <div class="doc-footer">
+    <span>ParkNow · Manual de Usuario v1.0</span>
+    <span>Sección 04 / 08</span>
+  </div>
+</div>
+
+
+<!-- =========================================================
+     S5: RESOLUCIÓN DE PROBLEMAS
+     ========================================================= -->
+<div id="s5" class="section">
+  <div class="section-hero">
+    <div class="section-tag">Sección 05</div>
+    <h1>Resolución de <span class="accent">Problemas</span></h1>
+    <p class="lead">Encuentra soluciones rápidas a los inconvenientes más comunes que pueden surgir al usar ParkNow.</p>
+  </div>
+  <div class="divider"></div>
+
+  <h2>Errores Frecuentes</h2>
+
+  <div class="error-list">
+
+    <div class="error-card">
+      <div class="error-header">
+        <span class="error-code">ERR-01</span>
+        <span class="error-title">GPS o ubicación desactivada</span>
+      </div>
+      <div class="error-body">
+        <div class="error-msg">
+          <span class="msg-label">Mensaje:</span> <em>"Activa la ubicación en tu dispositivo para continuar."</em>
+        </div>
+        <p><strong>Causa:</strong> La aplicación no puede acceder al GPS del dispositivo porque el permiso de ubicación está desactivado o fue rechazado.</p>
+        <div class="solution-steps">
+          <div class="sol-title"> Solución:</div>
+          <ol>
+            <li>Abre la <strong>Configuración</strong> de tu dispositivo.</li>
+            <li>Ve a <strong>Aplicaciones → ParkNow → Permisos</strong>.</li>
+            <li>Activa el permiso de <strong>Ubicación</strong> y selecciona <em>"Mientras uso la app"</em>.</li>
+            <li>Regresa a ParkNow y recarga el mapa.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="error-card">
+      <div class="error-header">
+        <span class="error-code">ERR-02</span>
+        <span class="error-title">Problemas de inicio de sesión</span>
+      </div>
+      <div class="error-body">
+        <div class="error-msg">
+          <span class="msg-label">Mensaje:</span> <em>"Correo o contraseña incorrectos."</em>
+        </div>
+        <p><strong>Causa:</strong> Las credenciales ingresadas no coinciden con las registradas en el sistema.</p>
+        <div class="solution-steps">
+          <div class="sol-title"> Solución:</div>
+          <ol>
+            <li>Verifica que el correo esté escrito correctamente (sin espacios extra).</li>
+            <li>Asegúrate de que la contraseña esté en el idioma y teclado correctos (la contraseña distingue mayúsculas de minúsculas).</li>
+            <li>Si olvidaste la contraseña, toca <strong>"Recuperar contraseña"</strong> e ingresa tu correo para recibir un enlace de restablecimiento.</li>
+            <li>Si el problema persiste, contacta al soporte técnico.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="error-card">
+      <div class="error-header">
+        <span class="error-code">ERR-03</span>
+        <span class="error-title">Mapa no carga o aparece en blanco</span>
+      </div>
+      <div class="error-body">
+        <div class="error-msg">
+          <span class="msg-label">Síntoma:</span> <em>El mapa aparece vacío o con un mensaje de error de carga.</em>
+        </div>
+        <p><strong>Causa:</strong> Conexión a Internet inestable o ausente, o permisos de ubicación no otorgados.</p>
+        <div class="solution-steps">
+          <div class="sol-title"> Solución:</div>
+          <ol>
+            <li>Verifica tu conexión a Internet (Wi-Fi o datos móviles).</li>
+            <li>Cierra y vuelve a abrir la aplicación.</li>
+            <li>Comprueba que los permisos de ubicación están activos.</li>
+            <li>Si usas Wi-Fi, intenta desconectarte y reconectarte a la red.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="error-card">
+      <div class="error-header">
+        <span class="error-code">ERR-04</span>
+        <span class="error-title">Pago rechazado o fallido</span>
+      </div>
+      <div class="error-body">
+        <div class="error-msg">
+          <span class="msg-label">Mensaje:</span> <em>"El pago no pudo procesarse. Inténtalo nuevamente."</em>
+        </div>
+        <p><strong>Causa:</strong> Fondos insuficientes, datos de tarjeta incorrectos, conexión inestable durante el pago o restricciones bancarias.</p>
+        <div class="solution-steps">
+          <div class="sol-title"> Solución:</div>
+          <ol>
+            <li>Verifica que los datos de tu tarjeta sean correctos (número, fecha de vencimiento, CVV).</li>
+            <li>Confirma que tengas saldo suficiente disponible.</li>
+            <li>Comprueba que tu banco no esté bloqueando transacciones en línea.</li>
+            <li>Intenta con una conexión Wi-Fi estable.</li>
+            <li>Prueba con un método de pago alternativo.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="error-card">
+      <div class="error-header">
+        <span class="error-code">ERR-05</span>
+        <span class="error-title">La aplicación se cierra inesperadamente</span>
+      </div>
+      <div class="error-body">
+        <div class="error-msg">
+          <span class="msg-label">Síntoma:</span> <em>La app se detiene sin aviso durante el uso.</em>
+        </div>
+        <p><strong>Causa:</strong> Versión desactualizada, caché corrupta, o insuficiente memoria RAM disponible.</p>
+        <div class="solution-steps">
+          <div class="sol-title"> Solución:</div>
+          <ol>
+            <li>Actualiza ParkNow a la última versión desde la tienda oficial.</li>
+            <li>Ve a <strong>Configuración → Aplicaciones → ParkNow → Limpiar caché</strong>.</li>
+            <li>Reinicia tu dispositivo y vuelve a abrir la app.</li>
+            <li>Si el error persiste, desinstala y vuelve a instalar la aplicación.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="error-card">
+      <div class="error-header">
+        <span class="error-code">ERR-06</span>
+        <span class="error-title">No recibo notificaciones</span>
+      </div>
+      <div class="error-body">
+        <div class="error-msg">
+          <span class="msg-label">Síntoma:</span> <em>No llegan alertas de confirmación de reserva ni recordatorios.</em>
+        </div>
+        <p><strong>Causa:</strong> Notificaciones desactivadas en la configuración del dispositivo o de la aplicación.</p>
+        <div class="solution-steps">
+          <div class="sol-title"> Solución:</div>
+          <ol>
+            <li>Ve a <strong>Configuración → Aplicaciones → ParkNow → Notificaciones</strong>.</li>
+            <li>Activa todas las notificaciones disponibles.</li>
+            <li>Verifica que el modo "No Molestar" no esté activo en tu dispositivo.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end error-list -->
+
+  <div class="alert alert-info" style="margin-top:2rem">
+    <strong>¿El problema no aparece en esta lista?</strong> Contacta a nuestro equipo de soporte en <strong>soporte@parknow.com</strong>. Describe el problema con detalle, incluyendo el modelo de tu dispositivo, versión del sistema operativo y captura de pantalla del error.
+  </div>
+
+  <div class="doc-footer">
+    <span>ParkNow · Manual de Usuario v1.0</span>
+    <span>Sección 05 / 08</span>
+  </div>
+</div>
+
+
+<!-- =========================================================
+     S6: CONSEJOS DE SEGURIDAD
+     ========================================================= -->
+<div id="s6" class="section">
+  <div class="section-hero">
+    <div class="section-tag">Sección 06</div>
+    <h1>Consejos de <span class="accent">Seguridad</span></h1>
+    <p class="lead">La protección de tu cuenta y tus datos es nuestra prioridad. Sigue estas recomendaciones para mantener tu información segura.</p>
+  </div>
+  <div class="divider"></div>
+
+  <h2>Protección de la Cuenta</h2>
+  <div class="security-grid">
+    <div class="sec-card">
+      <div class="sec-icon">🔑</div>
+      <h3>Contraseña segura</h3>
+      <p>Usa contraseñas de al menos <strong>8 caracteres</strong> que combinen letras mayúsculas, minúsculas, números y símbolos. Evita usar fechas de nacimiento, nombres propios o secuencias simples como "123456".</p>
+    </div>
+    <div class="sec-card">
+      <div class="sec-icon">🔄</div>
+      <h3>Actualiza periódicamente</h3>
+      <p>Cambia tu contraseña cada <strong>3 a 6 meses</strong>. Si sospechas que tu cuenta fue comprometida, cámbiala de inmediato y contacta al soporte técnico.</p>
+    </div>
+    <div class="sec-card">
+      <div class="sec-icon">🚫</div>
+      <h3>No compartas credenciales</h3>
+      <p>Nunca compartas tu correo electrónico ni contraseña con otras personas. ParkNow <strong>jamás</strong> te pedirá tu contraseña por correo, chat o teléfono.</p>
+    </div>
+    <div class="sec-card">
+      <div class="sec-icon">📱</div>
+      <h3>Sesiones activas</h3>
+      <p>Si usas la aplicación en un dispositivo compartido, asegúrate de <strong>cerrar sesión</strong> al terminar. No marques la opción "Recordar sesión" en equipos de uso público.</p>
+    </div>
+    <div class="sec-card">
+      <div class="sec-icon">🌐</div>
+      <h3>Redes Wi-Fi públicas</h3>
+      <p>Evita realizar pagos o ingresar datos sensibles desde redes Wi-Fi públicas (cafeterías, aeropuertos). Usa tu red de datos móviles para transacciones importantes.</p>
+    </div>
+    <div class="sec-card">
+      <div class="sec-icon">🔔</div>
+      <h3>Activa notificaciones</h3>
+      <p>Mantén las notificaciones habilitadas para recibir alertas sobre actividades en tu cuenta, como nuevas reservas o pagos procesados.</p>
+    </div>
+  </div>
+
+  <h2>Protección de Datos</h2>
+  <div class="data-prot-list">
+    <div class="dp-item">
+      <span class="dp-icon">🔐</span>
+      <div>
+        <strong>Cifrado de extremo a extremo</strong>
+        <p>Todas las comunicaciones entre tu dispositivo y nuestros servidores están cifradas mediante <strong>protocolo HTTPS/TLS</strong>, garantizando que tus datos no puedan ser interceptados.</p>
+      </div>
+    </div>
+    <div class="dp-item">
+      <span class="dp-icon">🏦</span>
+      <div>
+        <strong>Datos de pago seguros</strong>
+        <p>ParkNow no almacena los datos completos de tus tarjetas de crédito o débito. El procesamiento de pagos se realiza a través de pasarelas certificadas bajo estándar <strong>PCI DSS</strong>.</p>
+      </div>
+    </div>
+    <div class="dp-item">
+      <span class="dp-icon">📋</span>
+      <div>
+        <strong>Uso limitado de información</strong>
+        <p>Tu información personal (nombre, correo, teléfono, ubicación) se utiliza <strong>exclusivamente</strong> para el funcionamiento del servicio. No se vende ni comparte con terceros sin tu consentimiento explícito.</p>
+      </div>
+    </div>
+    <div class="dp-item">
+      <span class="dp-icon">🗑️</span>
+      <div>
+        <strong>Derecho de eliminación</strong>
+        <p>Puedes solicitar la eliminación de tu cuenta y todos tus datos en cualquier momento, contactando a nuestro equipo de soporte técnico.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="alert alert-warning">
+    <strong>⚠ Alerta de phishing:</strong> Desconfía de correos o mensajes que soliciten tus datos de acceso, informen de "premios" o te pidan hacer clic en enlaces sospechosos. Si recibes comunicaciones dudosas que supuestamente provienen de ParkNow, repórtalo inmediatamente a <strong>seguridad@parknow.com</strong>.
+  </div>
+
+  <div class="doc-footer">
+    <span>ParkNow · Manual de Usuario v1.0</span>
+    <span>Sección 06 / 08</span>
+  </div>
+</div>
+
+
+<!-- =========================================================
+     S7: TÉRMINOS Y CONDICIONES
+     ========================================================= -->
+<div id="s7" class="section">
+  <div class="section-hero">
+    <div class="section-tag">Sección 07</div>
+    <h1>Términos y <span class="accent">Condiciones</span></h1>
+    <p class="lead">Condiciones de uso del servicio ParkNow. Léelas con atención antes de utilizar la aplicación.</p>
+  </div>
+  <div class="divider"></div>
+
+  <div class="terms-block">
+    <h2>1. Aceptación de los Términos</h2>
+    <p>Al descargar, instalar o utilizar la aplicación ParkNow, el usuario acepta de forma expresa y voluntaria los presentes Términos y Condiciones. Si no estás de acuerdo con alguna de las condiciones aquí establecidas, debes abstenerte de usar la aplicación.</p>
+
+    <h2>2. Registro y Cuenta de Usuario</h2>
+    <p>Para acceder a las funcionalidades de ParkNow, el usuario deberá crear una cuenta proporcionando información veraz, completa y actualizada. El usuario es responsable de:</p>
+    <ul class="terms-list">
+      <li>Mantener la confidencialidad de sus credenciales de acceso (correo electrónico y contraseña).</li>
+      <li>Todas las actividades realizadas desde su cuenta.</li>
+      <li>Notificar de forma inmediata al equipo de soporte cualquier uso no autorizado de su cuenta.</li>
+    </ul>
+    <p>ParkNow se reserva el derecho de suspender o eliminar cuentas que incumplan estos términos o que sean utilizadas de forma fraudulenta.</p>
+
+    <h2>3. Uso del Servicio</h2>
+    <p>El usuario se compromete a utilizar ParkNow exclusivamente para fines lícitos relacionados con la búsqueda, reserva y pago de espacios de parqueadero. Queda prohibido:</p>
+    <ul class="terms-list">
+      <li>Usar la aplicación para actividades ilegales o fraudulentas.</li>
+      <li>Intentar acceder a sistemas o datos de otros usuarios sin autorización.</li>
+      <li>Realizar reservas falsas o cancelaciones abusivas que perjudiquen a otros usuarios o a los propietarios de parqueaderos.</li>
+      <li>Interferir con el funcionamiento normal de la plataforma mediante ataques, virus u otros medios tecnológicos maliciosos.</li>
+    </ul>
+
+    <h2>4. Reservas y Cancelaciones</h2>
+    <p>Las reservas realizadas a través de ParkNow están sujetas a las siguientes condiciones:</p>
+    <ul class="terms-list">
+      <li>La reserva queda confirmada una vez realizado el pago correspondiente.</li>
+      <li>Las cancelaciones realizadas con más de <strong>30 minutos de anticipación</strong> a la hora de entrada recibirán un reembolso completo.</li>
+      <li>Cancelaciones con menos de 30 minutos de anticipación podrán estar sujetas a cargos parciales según la política de cada parqueadero.</li>
+      <li>En caso de no presentarse al parqueadero (no-show), no se realizará reembolso alguno.</li>
+    </ul>
+
+    <h2>5. Pagos y Tarifas</h2>
+    <p>Los pagos realizados en ParkNow se procesan de forma segura a través de pasarelas de pago certificadas. Al agregar un método de pago, el usuario autoriza a ParkNow a cargar los montos correspondientes a las reservas realizadas. Las tarifas mostradas incluyen los impuestos aplicables. ParkNow no se hace responsable por cobros adicionales realizados por entidades bancarias por concepto de comisiones o intereses.</p>
+
+    <h2>6. Responsabilidad</h2>
+    <p>ParkNow actúa como intermediario entre los usuarios y los propietarios de parqueaderos. En consecuencia:</p>
+    <ul class="terms-list">
+      <li>ParkNow no se hace responsable por daños, pérdidas o hurtos ocurridos dentro de los parqueaderos.</li>
+      <li>La disponibilidad de espacios está sujeta a cambios en tiempo real y puede variar.</li>
+      <li>ParkNow no garantiza la disponibilidad ininterrumpida del servicio y puede realizar mantenimientos programados.</li>
+    </ul>
+
+    <h2>7. Privacidad y Protección de Datos</h2>
+    <p>El tratamiento de los datos personales de los usuarios se realiza conforme a nuestra <strong>Política de Privacidad</strong>, disponible en la aplicación. Al crear una cuenta, el usuario consiente el tratamiento de sus datos para los fines establecidos en dicha política, incluyendo la mejora del servicio, comunicaciones relacionadas con reservas y análisis de uso.</p>
+
+    <h2>8. Propiedad Intelectual</h2>
+    <p>Todos los derechos de propiedad intelectual sobre la aplicación ParkNow, incluyendo su código fuente, diseño, logotipos, marcas y contenidos, son propiedad exclusiva de ParkNow. Queda prohibida su reproducción, distribución o modificación sin autorización expresa y por escrito.</p>
+
+    <h2>9. Modificaciones de los Términos</h2>
+    <p>ParkNow se reserva el derecho de modificar los presentes Términos y Condiciones en cualquier momento. Los cambios serán notificados mediante la aplicación y/o correo electrónico. El uso continuado de la aplicación tras la notificación de cambios implica la aceptación de los nuevos términos.</p>
+
+    <h2>10. Legislación Aplicable</h2>
+    <p>Los presentes Términos y Condiciones se rigen por la legislación colombiana vigente. Cualquier controversia derivada del uso del servicio será sometida a los tribunales competentes de la República de Colombia.</p>
+  </div>
+
+  <div class="alert alert-info" style="margin-top:2rem">
+    <strong>Vigencia:</strong> Los presentes Términos y Condiciones fueron actualizados por última vez en <strong>enero de 2025</strong>. Al continuar usando ParkNow después de esta fecha, aceptas las condiciones aquí descritas.
+  </div>
+
+  <div class="doc-footer">
+    <span>ParkNow · Manual de Usuario v1.0</span>
+    <span>Sección 07 / 08</span>
+  </div>
+</div>
+
+
+<!-- =========================================================
+     S8: SOPORTE TÉCNICO
+     ========================================================= -->
+<div id="s8" class="section">
+  <div class="section-hero">
+    <div class="section-tag">Sección 08</div>
+    <h1>Soporte <span class="accent">Técnico</span></h1>
+    <p class="lead">Estamos disponibles para ayudarte. Contacta a nuestro equipo de soporte a través de cualquiera de los siguientes canales.</p>
+  </div>
+  <div class="divider"></div>
+
+  <h2>Canales de Contacto</h2>
+  <div class="contact-grid">
+    <div class="contact-card primary">
+      <div class="contact-icon">📧</div>
+      <h3>Correo Electrónico</h3>
+      <p class="contact-detail">soporte@parknow.com</p>
+      <p>Envía tu consulta detallada con el modelo de tu dispositivo, sistema operativo y descripción del problema. Tiempo de respuesta: <strong>24–48 horas hábiles</strong>.</p>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">💬</div>
+      <h3>Chat en la App</h3>
+      <p class="contact-detail">Disponible en la app</p>
+      <p>Accede desde <strong>Perfil → Ayuda → Chat con soporte</strong>. Disponible de lunes a viernes de <strong>8:00 a.m. a 6:00 p.m.</strong></p>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">📞</div>
+      <h3>Línea Telefónica</h3>
+      <p class="contact-detail">601-XXX-XXXX</p>
+      <p>Atención de lunes a viernes de <strong>9:00 a.m. a 5:00 p.m.</strong> (hora Colombia). Para urgencias relacionadas con pagos y reservas activas.</p>
+    </div>
+  </div>
+
+  <h2>Antes de Contactar al Soporte</h2>
+  <p>Para agilizar la atención, te recomendamos tener la siguiente información a mano:</p>
+  <div class="support-checklist">
+    <div class="check-item"><span class="check-mark">✓</span><span>Modelo de tu dispositivo (ej. Samsung Galaxy A54)</span></div>
+    <div class="check-item"><span class="check-mark">✓</span><span>Versión del sistema operativo (Android 13)</span></div>
+    <div class="check-item"><span class="check-mark">✓</span><span>Versión de ParkNow instalada (disponible en Configuración → Acerca de)</span></div>
+    <div class="check-item"><span class="check-mark">✓</span><span>Descripción detallada del problema (qué hiciste, qué esperabas, qué ocurrió)</span></div>
+    <div class="check-item"><span class="check-mark">✓</span><span>Capturas de pantalla del error (si aplica)</span></div>
+    <div class="check-item"><span class="check-mark">✓</span><span>Código de reserva afectada (si el problema está relacionado con una reserva)</span></div>
+  </div>
+
+  <h2>Preguntas Frecuentes Rápidas</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q">¿Cómo recupero mi contraseña?</div>
+      <div class="faq-a">En la pantalla de inicio de sesión, toca <strong>"¿Olvidaste tu contraseña?"</strong>, ingresa tu correo electrónico y recibirás un enlace de restablecimiento en tu bandeja de entrada (revisa también la carpeta de spam).</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">¿Puedo cancelar una reserva después de pagar?</div>
+      <div class="faq-a">Sí, puedes cancelar desde <strong>Mis Reservas → Seleccionar reserva → Cancelar</strong>. Las políticas de reembolso dependen del tiempo de anticipación con que se realice la cancelación (ver Sección 07 - Términos y Condiciones).</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">¿Cómo actualizo la aplicación?</div>
+      <div class="faq-a">Ve a la tienda oficial (Google Play Store o App Store), busca ParkNow y presiona <strong>"Actualizar"</strong> si hay una versión disponible. También puedes activar las actualizaciones automáticas.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">¿Mis datos están seguros?</div>
+      <div class="faq-a">Sí. ParkNow utiliza cifrado HTTPS en todas las comunicaciones y no almacena datos completos de tarjetas de crédito. Consulta la Sección 06 para más detalles sobre seguridad.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">¿Qué hago si el parqueadero no acepta mi reserva?</div>
+      <div class="faq-a">Muestra tu código de reserva (ej. PKN-8542) al operador del parqueadero. Si el inconveniente persiste, contacta al soporte técnico con el código de reserva y el nombre del parqueadero.</div>
+    </div>
+  </div>
+
+  <div class="alert alert-info" style="margin-top:2rem">
+    <strong>Documento confidencial:</strong> Este manual es para uso de los usuarios de ParkNow. Para soporte técnico especializado o integraciones empresariales, escribe a <strong>empresas@parknow.com</strong>.
+  </div>
+
+  <div class="doc-footer">
+    <span>ParkNow · Manual de Usuario v1.0</span>
+    <span>Sección 08 / 08</span>
+  </div>
+</div>
+
+</main><!-- end main -->
+</div><!-- end layout -->
+
+<script>
+function show(id, el) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  if(el) el.classList.add('active');
+  window.scrollTo(0,0);
+}
+
+function showSheet(id, el) {
+  const container = el.closest('.section');
+  container.querySelectorAll('.sheet-panel').forEach(p => p.classList.remove('active'));
+  container.querySelectorAll('.sheet-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  el.classList.add('active');
+}
+</script>
+</body>
+</html>
